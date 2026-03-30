@@ -6,7 +6,7 @@
 
 ## live Link:
 
-(https://digitools-system.netlify.app/)
+https://digitools-system.netlify.app/
 
 ## ✨ Features
 

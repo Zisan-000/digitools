@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = ({ cartValue }) => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm fixed top-0">
         <div className="max-w-328 mx-auto">
           <a className="btn btn-ghost p-0">
             <span className="text-4xl  bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-transparent bg-clip-text  ">

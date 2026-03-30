@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "/src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "name": "Resume Builder",
+    "description": "Create professional resumes with ATS-friendly templates and expert suggestions.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "/src/assets/products/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Kit",
+    "description": "Design and schedule engaging social media posts effortlessly.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Post scheduler", "Content calendar", "Hashtag generator"],
+    "icon": "/src/assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Logo Maker",
+    "description": "Create stunning logos for your brand using AI-powered tools.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "500+ logo templates",
+      "High-resolution export",
+      "Custom branding kit"
+    ],
+    "icon": "/src/assets/products/design-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "Website Builder",
+    "description": "Build responsive websites without coding using drag-and-drop tools.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Drag & drop editor", "Free hosting", "SEO tools"],
+    "icon": "/src/assets/products/operation.png"
+  },
+  {
+    "id": 6,
+    "name": "Email Marketing Pro",
+    "description": "Run powerful email campaigns with automation and analytics.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Email templates",
+      "Automation workflows",
+      "Performance tracking"
+    ],
+    "icon": "/src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 7,
+    "name": "Video Creator",
+    "description": "Turn your ideas into engaging videos with AI video generation.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "AI video generation",
+      "Stock footage library",
+      "Voiceover support"
+    ],
+    "icon": "/src/assets/products/social-media.png"
+  },
+  {
+    "id": 8,
+    "name": "Analytics Dashboard",
+    "description": "Track and analyze your business performance in real-time.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Real-time analytics", "Custom reports", "Data visualization"],
+    "icon": "/src/assets/products/design-tool.png"
+  }
+]

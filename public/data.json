@@ -12,8 +12,9 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-    "icon": "/src/assets/products/writing_2327400 1.png"
+    "icon": "https://i.ibb.co.com/vxFPRYb3/social-media.png"
   },
+
   {
     "id": 2,
     "name": "Resume Builder",
@@ -23,7 +24,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "/src/assets/products/design-tool.png"
+    "icon": "https://i.ibb.co.com/jvJQFd7F/design-tool.png"
   },
   {
     "id": 3,
@@ -34,7 +35,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["Post scheduler", "Content calendar", "Hashtag generator"],
-    "icon": "/src/assets/products/portfolio.png"
+    "icon": "https://i.ibb.co.com/whR8gh2q/operation.png"
   },
   {
     "id": 4,
@@ -49,7 +50,7 @@
       "High-resolution export",
       "Custom branding kit"
     ],
-    "icon": "/src/assets/products/design-tool.png"
+    "icon": "https://i.ibb.co.com/vxFPRYb3/social-media.png"
   },
   {
     "id": 5,
@@ -60,7 +61,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["Drag & drop editor", "Free hosting", "SEO tools"],
-    "icon": "/src/assets/products/operation.png"
+    "icon": "https://i.ibb.co.com/p5VQnby/writing.png"
   },
   {
     "id": 6,
@@ -75,7 +76,7 @@
       "Automation workflows",
       "Performance tracking"
     ],
-    "icon": "/src/assets/products/writing_2327400 1.png"
+    "icon": "https://i.ibb.co.com/whR8gh2q/operation.png"
   },
   {
     "id": 7,
@@ -90,7 +91,7 @@
       "Stock footage library",
       "Voiceover support"
     ],
-    "icon": "/src/assets/products/social-media.png"
+    "icon": "https://i.ibb.co.com/p5VQnby/writing.png"
   },
   {
     "id": 8,
@@ -101,6 +102,6 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["Real-time analytics", "Custom reports", "Data visualization"],
-    "icon": "/src/assets/products/design-tool.png"
+    "icon": "https://i.ibb.co.com/99hZ4bnZ/portfolio.png"
   }
 ]

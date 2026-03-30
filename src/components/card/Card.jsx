@@ -60,6 +60,7 @@ const Card = ({
               <span className="text-sm ">/{product.period}</span>
             </span>
           </div>
+
           <ul className="mt-2 flex flex-col gap-2 text-xs text-gray-500">
             <li>
               <svg
@@ -76,7 +77,7 @@ const Card = ({
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span>High-resolution image generation</span>
+              <span>{product.features[0]}</span>
             </li>
             <li>
               <svg
@@ -93,7 +94,7 @@ const Card = ({
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span>Customizable style templates</span>
+              <span>{product.features[1]}</span>
             </li>
             <li>
               <svg
@@ -110,7 +111,7 @@ const Card = ({
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span>Batch processing capabilities</span>
+              <span>{product.features[2]}</span>
             </li>
           </ul>
           <div className="mt-6">

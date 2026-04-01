@@ -12,7 +12,7 @@ const Banner = () => {
         <div className="flex flex-col lg:flex-row justify-between max-w-6xl mx-auto mt-10 md:mt-20 items-center gap-12">
           <div className="text-center lg:text-left">
             {/* Badge */}
-            <button className="bg-[#E1E7FF] rounded-full px-4 py-2 flex items-center gap-2 text-purple-700 mb-6 text-xs md:text-sm mx-auto lg:mx-0">
+            <button className="bg-[#E1E7FF] rounded-full px-4 py-2 mt-6 flex items-center gap-2 text-purple-700 mb-6 text-xs md:text-sm mx-auto lg:mx-0">
               <FaRegCircleDot className="animate-pulse" />
               <span>New: AI-Powered Tools Available</span>
             </button>

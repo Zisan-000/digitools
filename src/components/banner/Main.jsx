@@ -6,17 +6,18 @@ import { FaCheck } from "react-icons/fa6";
 
 const Main = () => {
   return (
-    <div className="font-sans text-gray-900 bg-gray-50">
+    <div className="font-sans text-gray-900 bg-gray-50 overflow-x-hidden">
       {/* SECTION 1: GET STARTED */}
-      <section className="py-20 px-6 max-w-6xl mx-auto text-center">
-        <h2 className="text-5xl font-bold mb-1  border-blue-400 inline-block px-4 py-2">
+      <section className="py-12 md:py-20 px-4 sm:px-6 max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-5xl font-bold mb-1 inline-block px-4 py-2">
           Get Started In 3 Steps
         </h2>
-        <p className="text-gray-500 mb-12 mt-4">
+        <p className="text-gray-500 mb-8 md:mb-12 mt-4 max-w-lg mx-auto text-sm md:text-base">
           Start using premium digital tools in minutes, not hours.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Grid: 1 column on mobile, 3 on medium screens */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {[
             {
               step: "01",
@@ -39,7 +40,7 @@ const Main = () => {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white p-8 rounded-xl shadow-sm relative border border-gray-100 transition-hover hover:shadow-md"
+              className="bg-white p-6 md:p-8 rounded-xl shadow-sm relative border border-gray-100 transition-all hover:shadow-md"
             >
               {/* Step Badge */}
               <span className="absolute top-4 right-4 bg-purple-600 text-white text-xs font-bold px-2 py-1 rounded-full">
@@ -47,17 +48,17 @@ const Main = () => {
               </span>
 
               {/* Icon Container */}
-              <div className="mb-6 flex items-center justify-center bg-purple-50 w-20 h-20 rounded-2xl mx-auto">
+              <div className="mb-6 flex items-center justify-center bg-purple-50 w-16 h-16 md:w-20 md:h-20 rounded-2xl mx-auto">
                 <img
                   src={item.icon}
                   alt={item.title}
-                  className="w-10 h-10 object-contain"
+                  className="w-8 h-8 md:w-10 md:h-10 object-contain"
                 />
               </div>
 
               {/* Content */}
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-900">
                   {item.title}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
@@ -70,18 +71,19 @@ const Main = () => {
       </section>
 
       {/* SECTION 2: PRICING */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-bold mb-4">
+      <section className="py-12 md:py-20 bg-white px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Simple, Transparent Pricing
           </h2>
-          <p className="text-gray-500 mb-16">
+          <p className="text-gray-500 mb-10 md:mb-16 text-sm md:text-base">
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 items-center">
+          {/* Grid: Stacks vertically on mobile, 3 columns on desktop */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             {/* Starter */}
-            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-left">
+            <div className="bg-gray-50 p-6 md:p-8 rounded-2xl border border-gray-100 text-left order-2 md:order-1">
               <h3 className="text-xl font-bold">Starter</h3>
               <p className="text-gray-500 text-sm mb-6">
                 Perfect for getting started
@@ -91,39 +93,24 @@ const Main = () => {
                 <span className="text-gray-400">/Month</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-gray-600">
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  Access to 10 free tools
+                <li className="flex items-center gap-2">
+                  <FaCheck className="text-green-500" /> Access to 10 free tools
                 </li>
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  Basic templates
+                <li className="flex items-center gap-2">
+                  <FaCheck className="text-green-500" /> Basic templates
                 </li>
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  Community support
-                </li>
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  1 project per month
+                <li className="flex items-center gap-2">
+                  <FaCheck className="text-green-500" /> Community support
                 </li>
               </ul>
-              <button className="w-full bg-linear-to-r from-indigo-500 to-purple-500 text-white py-3 rounded-xl font-semibold hover:bg-purple-700 transition">
+              <button className="w-full bg-linear-to-r from-indigo-500 to-purple-500 text-white py-3 rounded-xl font-semibold hover:opacity-90 transition">
                 Get Started Free
               </button>
             </div>
 
-            {/* Pro - Featured */}
-            <div className="bg-linear-to-br from-indigo-600 to-purple-500 p-8 rounded-2xl text-white text-left shadow-2xl transform scale-105 relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full shadow-md">
+            {/* Pro - Featured (Scales slightly on desktop only) */}
+            <div className="bg-linear-to-br from-indigo-600 to-purple-500 p-8 rounded-2xl text-white text-left shadow-2xl md:scale-105 relative z-10 order-1 md:order-2">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full shadow-md whitespace-nowrap">
                 Most Popular
               </div>
               <h3 className="text-xl font-bold">Pro</h3>
@@ -135,23 +122,14 @@ const Main = () => {
                 <span className="text-purple-200">/Month</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-purple-100">
-                <li className="flex items-center gap-1">
-                  <FaCheck /> Access to all premium tools
+                <li className="flex items-center gap-2">
+                  <FaCheck /> All premium tools
                 </li>
-                <li className="flex items-center gap-1">
-                  <FaCheck /> Unlimited templates
-                </li>
-                <li className="flex items-center gap-1">
+                <li className="flex items-center gap-2">
                   <FaCheck /> Priority support
                 </li>
-                <li className="flex items-center gap-1">
+                <li className="flex items-center gap-2">
                   <FaCheck /> Unlimited projects
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaCheck /> Cloud sync
-                </li>
-                <li className="flex items-center gap-1">
-                  <FaCheck /> Advanced analytics
                 </li>
               </ul>
               <button className="w-full bg-white text-purple-600 py-3 rounded-xl font-semibold hover:bg-gray-100 transition">
@@ -160,7 +138,7 @@ const Main = () => {
             </div>
 
             {/* Enterprise */}
-            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-left">
+            <div className="bg-gray-50 p-6 md:p-8 rounded-2xl border border-gray-100 text-left order-3">
               <h3 className="text-xl font-bold">Enterprise</h3>
               <p className="text-gray-500 text-sm mb-6">
                 For teams and businesses
@@ -170,44 +148,14 @@ const Main = () => {
                 <span className="text-gray-400">/Month</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-gray-600">
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  Everything in Pro
+                <li className="flex items-center gap-2">
+                  <FaCheck className="text-green-500" /> Everything in Pro
                 </li>
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  Team collaboration
-                </li>
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  Custom integrations
-                </li>
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  Dedicated support
-                </li>
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  SLA guarantee
-                </li>
-                <li className="flex items-center gap-1 ">
-                  <span className="text-green-500">
-                    <FaCheck />
-                  </span>{" "}
-                  Custom branding
+                <li className="flex items-center gap-2">
+                  <FaCheck className="text-green-500" /> Custom branding
                 </li>
               </ul>
-              <button className="w-full bg-linear-to-r from-indigo-500 to-purple-500 text-white py-3 rounded-xl font-semibold hover:bg-purple-700 transition">
+              <button className="w-full bg-linear-to-r from-indigo-500 to-purple-500 text-white py-3 rounded-xl font-semibold hover:opacity-90 transition">
                 Contact Sales
               </button>
             </div>
@@ -215,25 +163,25 @@ const Main = () => {
         </div>
       </section>
 
-      {/* SECTION 3 */}
-      <section className="bg-linear-to-br from-indigo-600 to-purple-500 py-24 px-6 text-center text-white">
-        <h2 className="text-4xl font-bold mb-4">
+      {/* SECTION 3: CTA */}
+      <section className="bg-linear-to-br from-indigo-600 to-purple-500 py-16 md:py-24 px-6 text-center text-white">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
           Ready To Transform Your Workflow?
         </h2>
-        <p className="text-purple-100 mb-10 max-w-2xl mx-auto">
+        <p className="text-purple-100 mb-10 max-w-2xl mx-auto text-sm md:text-base">
           Join thousands of professionals who are already using DigiTools to
-          work smarter. Start your free trial today.
+          work smarter.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-          <button className="bg-white text-purple-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+          <button className="w-full sm:w-auto bg-white text-purple-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
             Explore Products
           </button>
-          <button className="border border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition">
+          <button className="w-full sm:w-auto border border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition">
             View Pricing
           </button>
         </div>
-        <p className="text-xs text-purple-200">
-          14-day free trial • No credit card required • Cancel anytime
+        <p className="text-[10px] md:text-xs text-purple-200 uppercase tracking-wide">
+          14-day free trial • No credit card required
         </p>
       </section>
     </div>
